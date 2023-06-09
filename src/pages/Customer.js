@@ -66,7 +66,7 @@ export default function Customer() {
 
     function updateCustomer(e) {
         e.preventDefault();
-        const url = baseUrl + 'api/customers/' + id;
+        const url = baseUrl + 'api/customers/' + id + "/";
         fetch(url, {
             method: 'POST',
             headers: {
